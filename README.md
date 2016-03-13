@@ -1,4 +1,4 @@
-# practicalMachineLearning
+# Practical Machine Learning Course Repo
 Repository for Coursera Machine Learning Course
 
 Repo contains the following files
