@@ -121,33 +121,33 @@ confusionMatrix(xval.predictions, training.xval$classe)</code></pre>
 ## 
 ##           Reference
 ## Prediction    A    B    C    D    E
-##          A 1115    0    0    0    0
+##          A 1116    0    0    0    0
 ##          B    0  757    0    0    0
-##          C    0    2  684    4    0
-##          D    0    0    0  639    0
-##          E    1    0    0    0  721
+##          C    0    2  683    1    0
+##          D    0    0    1  642    0
+##          E    0    0    0    0  721
 ## 
 ## Overall Statistics
 ##                                           
-##                Accuracy : 0.9982          
-##                  95% CI : (0.9963, 0.9993)
+##                Accuracy : 0.999           
+##                  95% CI : (0.9974, 0.9997)
 ##     No Information Rate : 0.2845          
 ##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
 ##                                           
-##                   Kappa : 0.9977          
+##                   Kappa : 0.9987          
 ##  Mcnemar's Test P-Value : NA              
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            0.9991   0.9974   1.0000   0.9938   1.0000
-## Specificity            1.0000   1.0000   0.9981   1.0000   0.9997
-## Pos Pred Value         1.0000   1.0000   0.9913   1.0000   0.9986
-## Neg Pred Value         0.9996   0.9994   1.0000   0.9988   1.0000
+## Sensitivity            1.0000   0.9974   0.9985   0.9984   1.0000
+## Specificity            1.0000   1.0000   0.9991   0.9997   1.0000
+## Pos Pred Value         1.0000   1.0000   0.9956   0.9984   1.0000
+## Neg Pred Value         1.0000   0.9994   0.9997   0.9997   1.0000
 ## Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
-## Detection Rate         0.2842   0.1930   0.1744   0.1629   0.1838
-## Detection Prevalence   0.2842   0.1930   0.1759   0.1629   0.1840
-## Balanced Accuracy      0.9996   0.9987   0.9991   0.9969   0.9998</code></pre>
+## Detection Rate         0.2845   0.1930   0.1741   0.1637   0.1838
+## Detection Prevalence   0.2845   0.1930   0.1749   0.1639   0.1838
+## Balanced Accuracy      1.0000   0.9987   0.9988   0.9991   1.0000</code></pre>
 <p>Results on the training data show that the model is highly accurate, 99.4%. The in-sample error rate is 0.6%. Next we use the cross-validation data to estimate the out-of-sample error.</p>
 </div>
 <div id="cross-validation" class="section level1">
@@ -162,33 +162,33 @@ confusionMatrix(xval.predictions, training.xval$classe)</code></pre>
 ## 
 ##           Reference
 ## Prediction    A    B    C    D    E
-##          A 1115    0    0    0    0
+##          A 1116    0    0    0    0
 ##          B    0  757    0    0    0
-##          C    0    2  684    4    0
-##          D    0    0    0  639    0
-##          E    1    0    0    0  721
+##          C    0    2  683    1    0
+##          D    0    0    1  642    0
+##          E    0    0    0    0  721
 ## 
 ## Overall Statistics
 ##                                           
-##                Accuracy : 0.9982          
-##                  95% CI : (0.9963, 0.9993)
+##                Accuracy : 0.999           
+##                  95% CI : (0.9974, 0.9997)
 ##     No Information Rate : 0.2845          
 ##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
 ##                                           
-##                   Kappa : 0.9977          
+##                   Kappa : 0.9987          
 ##  Mcnemar's Test P-Value : NA              
 ## 
 ## Statistics by Class:
 ## 
 ##                      Class: A Class: B Class: C Class: D Class: E
-## Sensitivity            0.9991   0.9974   1.0000   0.9938   1.0000
-## Specificity            1.0000   1.0000   0.9981   1.0000   0.9997
-## Pos Pred Value         1.0000   1.0000   0.9913   1.0000   0.9986
-## Neg Pred Value         0.9996   0.9994   1.0000   0.9988   1.0000
+## Sensitivity            1.0000   0.9974   0.9985   0.9984   1.0000
+## Specificity            1.0000   1.0000   0.9991   0.9997   1.0000
+## Pos Pred Value         1.0000   1.0000   0.9956   0.9984   1.0000
+## Neg Pred Value         1.0000   0.9994   0.9997   0.9997   1.0000
 ## Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
-## Detection Rate         0.2842   0.1930   0.1744   0.1629   0.1838
-## Detection Prevalence   0.2842   0.1930   0.1759   0.1629   0.1840
-## Balanced Accuracy      0.9996   0.9987   0.9991   0.9969   0.9998</code></pre>
+## Detection Rate         0.2845   0.1930   0.1741   0.1637   0.1838
+## Detection Prevalence   0.2845   0.1930   0.1749   0.1639   0.1838
+## Balanced Accuracy      1.0000   0.9987   0.9988   0.9991   1.0000</code></pre>
 <div id="expected-out-of-sample-error-rate" class="section level2">
 <h2>Expected Out-of-Sample Error Rate</h2>
 <p>As shown in the above output the accuracy is 99.39% for the cross validation data, indicating that the out-of-sample error rate is 0.61%</p>
